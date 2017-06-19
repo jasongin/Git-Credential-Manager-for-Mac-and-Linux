@@ -88,6 +88,10 @@ public class GithubTokenScope extends TokenScope
      */
     public static final GithubTokenScope User = new GithubTokenScope("user");
     /**
+     * Access all user information (read-only)
+     */
+    public static final GithubTokenScope UserRead = new GithubTokenScope("read:user");
+    /**
      * Access user email address (read-only)
      */
     public static final GithubTokenScope UserEmail = new GithubTokenScope("user:email");
@@ -131,6 +135,7 @@ public class GithubTokenScope extends TokenScope
         RepoHookRead,
         RepoHookWrite,
         User,
+        UserRead,
         UserEmail,
         UserFollow
     );
